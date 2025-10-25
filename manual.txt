@@ -1,0 +1,78 @@
+HRMS Application Setup Manual
+===========================
+
+Prerequisites
+------------
+1. Node.js (v16.0.0 or higher)
+   - Download and install from: https://nodejs.org/
+
+2. Git
+   - Download and install from: https://git-scm.com/downloads
+
+Required Global NPM Packages
+--------------------------
+npm install -g typescript
+
+Installation Steps
+----------------
+1. Clone the repository:
+   git clone https://github.com/MaoLeangse/HRMS-Site.git
+   cd HRMS-Site
+
+2. Install dependencies:
+   npm install --legacy-peer-deps
+
+   Key dependencies included:
+   - React v18.2.0
+   - React Router DOM v6.30.1
+   - TypeScript v5.5.0
+   - Bootstrap v5.3.8
+   - Axios v1.12.2
+   - React Query v5.90.5
+   - Recharts v2.15.4
+   - SweetAlert2 v11.26.3
+
+3. Required VS Code Extensions (Optional but recommended):
+   - ESLint
+   - Prettier
+   - TypeScript and JavaScript Language Features
+   - React Developer Tools for your browser
+
+Running the Application
+---------------------
+1. Start the development server:
+   npm start
+
+2. Access the application:
+   Open http://localhost:3000 in your web browser
+
+Common Issues and Solutions
+-------------------------
+1. If you encounter TypeScript version conflicts:
+   - Use --legacy-peer-deps flag when installing packages
+   
+2. If modules are not found:
+   - Delete node_modules folder and package-lock.json
+   - Run npm install --legacy-peer-deps again
+
+3. Browser compatibility:
+   - The application is configured to support:
+     * Latest Chrome version
+     * Latest Firefox version
+     * Latest Safari version
+     * Not dead browsers
+     * No Opera Mini
+
+Maintenance
+----------
+1. To update dependencies:
+   npm update
+
+2. To check for outdated packages:
+   npm outdated
+
+3. To run in production mode:
+   npm run build
+   (Then serve the build folder using a static server)
+
+Note: Keep Node.js and npm updated to their latest LTS versions for best compatibility.
